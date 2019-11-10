@@ -418,6 +418,10 @@ a:hover {
   padding-bottom: 1.563rem;
 }
 
+body .navbar-brand { 
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+
 .navbar-b.navbar-reduce {
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
@@ -434,6 +438,7 @@ a:hover {
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
+  font-family: 'Asul', sans-serif;
 }
 
 .navbar-b.navbar-trans .nav-link:before,
@@ -446,6 +451,7 @@ a:hover {
   left: 0;
   height: 2px;
   transition: all 500ms ease;
+  font-family: 'ZCOOL+XiaoWei', sans-serif;
 }
 
 .navbar-b.navbar-trans .nav-link:hover,
@@ -1229,6 +1235,7 @@ footer .credits a {
   .navbar-b.navbar-trans .nav-item,
   .navbar-b.navbar-reduce .nav-item {
     padding-left: 10px;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .navbar-b.navbar-trans .nav-link:before,
