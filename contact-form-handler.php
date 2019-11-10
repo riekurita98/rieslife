@@ -3,7 +3,6 @@ $errors = '';
 $myemail = 'riekurita.dev@gmail.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
    empty($_POST['email']) || 
-   empty($_POST['subject']) || 
    empty($_POST['message']))
 {
     $errors .= "\n Error: all fields are required";
@@ -11,7 +10,6 @@ if(empty($_POST['name'])  ||
 
 $name = $_POST['name']; 
 $email_address = $_POST['email']; 
-$subject = $_POST['subjectl']; 
 $message = $_POST['message']; 
 
 if (!preg_match(
@@ -26,7 +24,6 @@ if( empty($errors))
 	$to = $myemail; 
 	$email_subject = "Contact form submission: $name";
 	$email_body = "You have received a new message. ".
-	"Subject: $subject".
 	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
 	
 	$headers = "From: $myemail\n"; 
@@ -34,7 +31,7 @@ if( empty($errors))
 	
 	mail($to,$email_subject,$email_body,$headers);
 	//redirect to the 'thank you' page
-	// header('Location: contact-form-thank-you.html');
+	header('Location: contact-form-thank-you.html');
 } 
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
