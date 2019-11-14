@@ -503,24 +503,26 @@
                   <div>
                     
 
-                    <form method="post" action="send_mail.php">
+                    <form name="contact" method="POST" data-netlify="true">
                       <p>
-                      <label>First Name
-                      <input type="text" name="first_name" required>
-                      </label> 
+                        <label>Your Name: <input type="text" name="name" /></label>   
                       </p>
                       <p>
-                      <label>Email 
-                      <input type="email" name="email_address">
-                      </label>
+                        <label>Your Email: <input type="email" name="email" /></label>
                       </p>
                       <p>
-                      <label>Comments
-                      <textarea name="comments" maxlength="500"></textarea>
-                      </label>
+                        <label>Your Role: <select name="role[]" multiple>
+                          <option value="leader">Leader</option>
+                          <option value="follower">Follower</option>
+                        </select></label>
                       </p>
-                      <p><button>Submit the form</button></p>
-                      </form>
+                      <p>
+                        <label>Message: <textarea name="message"></textarea></label>
+                      </p>
+                      <p>
+                        <button type="submit">Send</button>
+                      </p>
+                    </form>
 
 
                       <form action="contact-form-handler.php" method="post" name="contactform" role="form" enctype=”multipart/form-data” class="contactForm">
