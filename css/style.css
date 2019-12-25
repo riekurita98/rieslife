@@ -188,7 +188,7 @@ a:hover {
 }
 
 .logo {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0px;
   right: 10px;
   width: 300px;
